@@ -1,0 +1,628 @@
+html {
+  max-width: 540px;
+  min-width: 320px;
+}
+header {
+  top: 0;
+  height: 1.28rem;
+  font-size: 12px;
+  width: 100%;
+  z-index: 999;
+  position: fixed;
+  display: flex;
+  flex-flow: nowrap column;
+  background-color: #fdfbfc;
+}
+header img {
+  height: 0.893rem;
+  width: 0.893rem;
+  border-radius: 0.42rem;
+  opacity: 0.8;
+}
+header > :nth-child(1) {
+  flex: 1.286;
+  display: flex;
+  flex-flow: nowrap row;
+  justify-content: space-between;
+  align-items: none;
+}
+header > :nth-child(1) .left {
+  display: flex;
+  flex-flow: nowrap row;
+  justify-content: none;
+  align-items: none;
+  float: 3;
+}
+header > :nth-child(1) .left h2 {
+  font-size: 14px;
+  color: #000;
+  font-weight: 600;
+  overflow: hidden;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+  line-height: 0.4rem;
+}
+header > :nth-child(1) .left p {
+  line-height: 0.3067rem;
+  margin-top: -0.1333rem;
+  color: grey;
+}
+header > :nth-child(1) .left .img_icon {
+  height: 100%;
+  width: 50%;
+  flex: 1;
+  margin-right: 0.4067rem;
+  margin-left: 0.4067rem;
+  display: flex;
+  flex-flow: column;
+  justify-content: center;
+  align-items: center;
+}
+header > :nth-child(1) .left .qq_music {
+  flex: 4.5;
+}
+header > :nth-child(1) .right {
+  height: 100%;
+  flex: 1;
+  display: flex;
+  flex-flow: column;
+  justify-content: center;
+  align-items: center;
+}
+header > :nth-child(1) .right div {
+  width: 1.2933rem;
+  height: 0.6667rem;
+  margin-right: -2rem;
+  padding: 0.3rem;
+  border-radius: 0.5333rem;
+  border: solid 1px #d8d8d8;
+  display: flex;
+  flex-flow: column;
+  justify-content: center;
+  align-items: center;
+}
+header > :nth-child(1) .right a {
+  font-weight: 400;
+  text-align: center;
+  color: #575656;
+}
+header > :nth-child(2) {
+  flex: 1;
+}
+header .more {
+  font-size: 15px;
+}
+.sml_title {
+  margin-top: 1.1rem;
+  display: flex;
+  flex-flow: nowrap row;
+  justify-content: none;
+  align-items: none;
+}
+.sml_title div {
+  flex: 1;
+  display: flex;
+  flex-flow: row;
+  justify-content: center;
+  align-items: center;
+}
+.sml_title div span {
+  font-size: 0.3633rem;
+  line-height: 1rem;
+  width: 1.6rem;
+  text-align: center;
+  display: inline-block;
+}
+.sml_title div .active {
+  color: #22d59c;
+  border-bottom: 3.5px solid #22D59C;
+}
+.tab_cont {
+  margin: 0.1667rem auto;
+}
+.tab_cont .search_box {
+  width: 100%;
+  height: 1.0667rem;
+  display: flex;
+  flex-flow: row;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+}
+.tab_cont .search_box .search_btn {
+  width: 90%;
+  height: 90%;
+  text-align: center;
+  font-size: 0.3733rem;
+  font-weight: 400;
+  border-radius: 0.8rem;
+  background-color: #fafafa;
+}
+.tab_cont .search_box i {
+  font-size: 0.4733rem;
+  font-weight: 700;
+}
+.tab_cont .search_box .search {
+  width: 70%;
+  text-align: start;
+  width: 91%;
+  margin: 1rem auto;
+}
+.tab_cont .search_icon {
+  width: 0.4rem;
+  height: 0.4rem;
+  font-size: 0.6667rem;
+  font-weight: 700;
+  position: absolute;
+  left: 39%;
+  top: 20%;
+}
+.rank_list,
+.search_btn,
+.search {
+  width: 91%;
+  margin: 1rem auto;
+}
+.hot {
+  width: 91%;
+  margin: 1.4rem auto;
+}
+.rank_list {
+  width: 96%;
+  margin: -0.9rem auto;
+}
+.history {
+  width: 91%;
+  margin: 2rem auto;
+}
+.footers {
+  width: 100%;
+  height: 2.754rem;
+  margin-top: 4rem;
+  display: flex;
+  flex-flow: column;
+  justify-content: center;
+  align-items: center;
+}
+.footers div:nth-child(1) {
+  width: 2.02rem;
+  height: 0.6567rem;
+  margin: 0 auto;
+  background: url(../image/wangyilogo2.webp) center center no-repeat;
+  background-size: 100% 100%;
+}
+.footers div:nth-child(n+1) {
+  height: 0.4827rem;
+  text-align: center;
+}
+.footers div {
+  color: #1a1a1a;
+}
+footer {
+  width: 100%;
+  height: 2.0536rem;
+  bottom: 0.4rem;
+  box-shadow: 0 3px 25px rgba(0, 0, 0, 0.05);
+  position: fixed;
+  display: flex;
+  flex-flow: row;
+  justify-content: center;
+  align-items: center;
+}
+footer .foot {
+  background-color: #fafafa;
+  width: 5.4667rem;
+  height: 1.2rem;
+  border-radius: 1.3333rem;
+  display: flex;
+  flex-flow: nowrap row;
+  justify-content: none;
+  align-items: none;
+}
+footer .foot :nth-child(1) {
+  flex: 1;
+  background: url(../image//wangyilogo2.webp) center center no-repeat;
+  background-size: contain;
+}
+footer .foot :nth-child(2) {
+  height: 100%;
+  flex: 5;
+  font-size: 13px;
+  color: #1a1a1a;
+  line-height: 1.2rem;
+  text-align: center;
+  white-space: nowrap;
+}
+.your_search {
+  width: 90%;
+  height: 89%;
+  margin: 0.4rem auto;
+  display: flex;
+  flex-flow: column nowrap;
+  justify-content: space-evenly;
+  align-items: left;
+  font-size: 16px;
+  font-weight: 600;
+  color: #1a1a1a;
+}
+.search_something h2 {
+  margin-left: 0.4rem;
+}
+#one_song {
+  width: 100%;
+  height: 20rem;
+  margin: 1.3rem auto;
+}
+#one_song .bgimg {
+  width: 100%;
+  height: 300%;
+  position: absolute;
+  z-index: -1;
+  filter: blur(70px);
+}
+#one_song .detailTop {
+  width: 100%;
+  height: 1rem;
+  display: flex;
+  padding: 0.2rem;
+  justify-content: space-between;
+  align-items: center;
+  fill: #fff;
+}
+#one_song .detailTop .detailTopLeft {
+  display: flex;
+  align-items: center;
+}
+#one_song .detailTop .detailTopLeft .leftMarquee {
+  width: 3rem;
+  height: 100%;
+  margin-left: 0.4rem;
+}
+#one_song .detailTop .detailTopLeft .leftMarquee span {
+  color: #999;
+}
+#one_song .detailTop .detailTopLeft .leftMarquee .icon {
+  width: 0.3rem;
+  height: 0.3rem;
+  fill: #999;
+}
+#one_song .detailContent {
+  width: 100%;
+  height: 9rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  position: relative;
+}
+#one_song .detailContent .img_needle {
+  width: 2rem;
+  height: 3rem;
+  position: absolute;
+  left: 46%;
+  transform-origin: 0 0;
+  transform: rotate(-13deg);
+  transition: all 2s;
+}
+#one_song .detailContent .img_needle_active {
+  width: 2rem;
+  height: 3rem;
+  position: absolute;
+  left: 46%;
+  transform-origin: 0 0;
+  transform: rotate(0deg);
+  transition: all 2s;
+}
+#one_song .detailContent .img_cd {
+  width: 5rem;
+  height: 5rem;
+  position: absolute;
+  bottom: 2.3rem;
+  z-index: -1;
+}
+#one_song .detailContent .img_ar {
+  width: 3.2rem;
+  height: 3.2rem;
+  border-radius: 50%;
+  position: absolute;
+  bottom: 3.14rem;
+  animation: rotate_ar 10s linear infinite;
+}
+#one_song .detailContent .img_ar_active {
+  animation-play-state: running;
+}
+#one_song .detailContent .img_ar_pauesd {
+  animation-play-state: paused;
+}
+@keyframes rotate_ar {
+  0% {
+    transform: rotateZ(0deg);
+  }
+  100% {
+    transform: rotateZ(360deg);
+  }
+}
+#one_song .centerWords {
+  width: 100%;
+  height: 4rem;
+}
+#one_song .centerWords div {
+  margin: 0.6rem auto;
+  width: 4.2933rem;
+  height: 0.8667rem;
+  border-radius: 0.5333rem;
+  border: solid 1px #d8d8d8;
+  line-height: 0.8rem;
+  text-align: center;
+}
+#one_song .detailFooter {
+  width: 100%;
+  height: 3rem;
+  position: absolute;
+  bottom: 0.2rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+#one_song .detailFooter .footerTop {
+  width: 100%;
+  height: 1rem;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+#one_song .detailFooter .footerTop .icon {
+  width: 0.36rem;
+  height: 0.36rem;
+  fill: #f5eaea;
+}
+#one_song .detailFooter .footerTop .icon {
+  width: 0.6rem;
+  height: 0.6rem;
+}
+#one_song .detailFooter .range {
+  width: 100%;
+  height: 0.06rem;
+}
+#one_song .detailFooter .footer {
+  width: 100%;
+  height: 1rem;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+#one_song .detailFooter .footer .icon {
+  fill: #f5eaea;
+}
+#one_song .detailFooter .footer .bofang {
+  width: 1rem;
+  height: 1rem;
+}
+.likeSongs {
+  vertical-align: top;
+}
+.likeSongs ._title {
+  width: 90%;
+  margin: 0.4rem auto;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.likeSongs ._title .left {
+  font-size: 0.4rem;
+  font-weight: 700;
+  color: black;
+}
+.likeSongs ._title .right {
+  width: 2.1933rem;
+  height: 0.6667rem;
+  display: flex;
+  padding: 0.2rem;
+  justify-content: space-between;
+  align-items: center;
+  border-radius: 0.5333rem;
+  border: solid 1px #d8d8d8;
+}
+.likeSongs section {
+  width: 90%;
+  margin: 0.4rem auto;
+  height: 6rem;
+  vertical-align: top;
+}
+.likeSongs section .contain {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-top: 0.1rem;
+}
+.likeSongs section .left {
+  vertical-align: top;
+  flex: 1.5;
+  width: 1.2rem;
+  height: 1.2rem;
+  background: url("../image/p2.jpg") no-repeat;
+  background-size: contain;
+  border-radius: 0.2rem;
+  overflow: hidden;
+}
+.likeSongs section .center {
+  flex: 5;
+}
+.likeSongs section .center p {
+  font-weight: 600;
+  line-height: 0.5rem;
+}
+.likeSongs section .right {
+  font-size: 26px;
+  flex: 1;
+}
+.comment {
+  width: 100%;
+}
+.comment ._title {
+  width: 90%;
+  margin: 0.4rem auto;
+  font-size: 0.4rem;
+  font-weight: 700;
+  color: black;
+}
+#songs_list {
+  width: 100%;
+  margin: 1rem auto;
+}
+.itemMusicTop {
+  width: 100%;
+  height: 1rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  position: relative;
+  color: #000;
+}
+.itemMusicTop .itemLeft,
+.itemMusicTop .itemRight {
+  width: 25%;
+  height: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin: 0 0.2rem;
+}
+.itemMusicTop .itemLeft span,
+.itemMusicTop .itemRight span {
+  font-size: 0.4rem;
+  color: #fff;
+}
+.itemMusicTop .itemLeft .icon,
+.itemMusicTop .itemRight .icon {
+  fill: #fff;
+}
+.itemMusicTop .bgimg {
+  width: 100%;
+  height: 11rem;
+  position: absolute;
+  z-index: -1;
+  filter: blur(30px);
+}
+.itemTopContent {
+  width: 100%;
+  height: 3rem;
+  padding: 0.2rem;
+  margin-top: 0.4rem;
+  display: flex;
+  justify-content: space-between;
+}
+.itemTopContent .contentLeft {
+  width: 36%;
+  height: 2.6rem;
+  position: relative;
+}
+.itemTopContent .contentLeft img {
+  width: 2.6rem;
+  height: 2.6rem;
+  border-radius: 0.2rem;
+  position: absolute;
+  z-index: -1;
+}
+.itemTopContent .contentLeft .palyCount {
+  position: absolute;
+  right: 0.1rem;
+  margin-top: 0.1rem;
+}
+.itemTopContent .contentLeft .palyCount .icon {
+  width: 0.26rem;
+  height: 0.26rem;
+  margin-top: -0.02rem;
+  vertical-align: middle;
+}
+.itemTopContent .contentLeft .palyCount span {
+  font-size: 0.26rem;
+  color: #fff;
+}
+.itemTopContent .contentRight {
+  width: 60%;
+  height: 1rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  align-items: center;
+}
+.itemTopContent .contentRight .rightP_one {
+  width: 100%;
+  height: 0.5rem;
+  font-size: 0.3rem;
+  font-weight: 900;
+  color: #fff;
+  font-family: "微软雅黑";
+}
+.itemTopContent .contentRight .right_img {
+  width: 100%;
+  height: 1rem;
+  line-height: 0.6rem;
+  color: #ccc;
+}
+.itemTopContent .contentRight .right_img .img {
+  display: flex;
+}
+.itemTopContent .contentRight .right_img img {
+  width: 0.6rem;
+  height: 0.6rem;
+  border-radius: 50%;
+  vertical-align: middle;
+}
+.itemTopContent .contentRight .right_img span {
+  width: 4rem;
+  color: black;
+  margin-top: 0.4rem;
+  height: 1.2rem;
+  display: -webkit-box;
+  white-space: wrap;
+  overflow: hidden;
+  -webkit-box-orient: vertical;
+  line-clamp: 3;
+  -webkit-line-clamp: 3;
+}
+.itemTopFooter {
+  width: 100%;
+  height: 1.4rem;
+}
+.itemTopFooter div {
+  margin: 0.6rem auto;
+  width: 4.2933rem;
+  height: 0.8667rem;
+  border-radius: 0.5333rem;
+  border: solid 1px #d8d8d8;
+  line-height: 0.8rem;
+  text-align: center;
+  color: #fff;
+}
+.songs_list {
+  width: 100%;
+  border: 1px solid #fff;
+  background-color: #fff;
+  border-radius: 1rem 1rem 0 0 ;
+  margin-top: -0.43rem;
+  padding: 0.01rem 0 0 0.5rem;
+}
+.songs_list ._title {
+  width: 90%;
+  height: 2rem;
+  padding: 0.04rem;
+  display: flex;
+  justify-content: start;
+  align-items: center;
+  margin-left: 0.2rem;
+}
+.songs_list ._title p {
+  font-size: 0.7rem;
+  font-weight: 700;
+  margin-left: 0.2rem;
+}
+.songs_list ._title div {
+  font-size: 0.4rem;
+  font-weight: 550;
+  margin-left: 0.2rem;
+}
+.songs_list ._title i {
+  color: #999;
+  margin-left: 0.2rem;
+}

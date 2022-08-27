@@ -1,0 +1,179 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, user-scalable=no,  initial-scale=1.0 maximum-scale=1.0  minimum-scale=1.0">
+    <title>yun_MUSIC</title>
+
+
+
+
+</head>
+
+<body currenTime="0">
+    <!-- 头部固定样式 -->
+
+    <header>
+        <section>
+            <div class="left">
+                <!-- https://bizaladdin-image.baidu.com/0/pic/1455484060_685827087_-310145699.jpg -->
+                <div class="img_icon"> <img src="./image/wangyilogo1.jpg" alt="123"> </div>
+                <div class="qq_music">
+                    <h2 class="iconfont">网易云音乐</h2>
+                    <p> 打开APP收藏下载</p>
+                </div>
+            </div>
+            <div class="right">
+
+                <div>
+                    <p class="iconfont more"> &#xe63b;&#xe600; </p>
+                </div>
+
+            </div>
+        </section>
+    </header>
+    <!-- 切换组件 -->
+    <section class="sml_title" style="display: flex;">
+        <div> <span class="active">推荐</span> </div>
+        <div> <span class="no_active">排行</span> </div>
+    </section>
+    <!-- 推荐 板块所有组件 -->
+    <section class="tab_cont" style="display: block;">
+        <!-- 搜索框组件 -->
+        <section class="search_box">
+            <p class="search_icon iconfont">&#xe603;</p>
+            <input class="search_btn" type="text" placeholder="搜索">
+            <i style="display: none;">取消</i>
+        </section>
+
+        <!-- 首页组件 -->
+        <section class="disappear">
+
+            <swiper-card _title="官方歌单"></swiper-card>
+            <swiper-card _title="达人歌单"></swiper-card>
+            <swiper-card _title="专区" width_height="4.0267,2.6867"></swiper-card>
+        </section>
+        <!-- 历史组件 -->
+        <section class="history" style="display: none;">
+            <history-card> </history-card>
+        </section>
+
+        <!-- 热搜组件 -->
+        <section class="hot" style="display: none;">
+            <h2>热门搜索！！</h2>
+
+        </section>
+
+        <section class="search_something" style="display: none;">
+            <h2>你的搜索:</h2>
+            <div class="your_search">
+
+            </div>
+
+
+        </section>
+    </section>
+
+    <!-- 排行 板块所有组件 -->
+    <section id="List" class="rank_list" style="display: none;">
+
+        <list-card></list-card>
+        <list-card></list-card>
+        <list-card></list-card>
+        <list-card></list-card>
+
+    </section>
+
+    <section id="one_song" style="display: none;">
+
+        <songimg-card></songimg-card>
+
+        <div class="centerWords">
+            <words-card></words-card>
+            <div>分享给喜欢的人听！！！</div>
+        </div>
+
+
+        <like-card></like-card>
+
+        <section class="comment">
+            <div class="_title">精彩评论</div>
+
+        </section>
+
+
+        <!-- <div class="detailFooter">
+            <div class="footerTop">
+                <svg class="icon" aria-hidden="true">
+              <use xlink:href="#icon-aixin"></use>
+            </svg>
+                <svg class="icon" aria-hidden="true">
+              <use xlink:href="#icon-iconfontzhizuobiaozhun023146"></use>
+            </svg>
+                <svg class="icon" aria-hidden="true">
+              <use xlink:href="#icon-yinlechangpian"></use>
+            </svg>
+                <svg class="icon" aria-hidden="true">
+              <use xlink:href="#icon-iconfontzhizuobiaozhun023110"></use>
+            </svg>
+                <svg class="icon" aria-hidden="true">
+              <use xlink:href="#icon-liebiao-"></use>
+            </svg>
+            </div>
+            <div class="footerContent">
+                <input type="range" class="range" min="0" :max="duration" v-model="currentTime" step="0.05">
+            </div>
+            <div class="footer">
+                <svg class="icon" aria-hidden="true">
+              <use xlink:href="#icon-xunhuan"></use>
+            </svg>
+                <svg class="icon" aria-hidden="true" @click="goPlay(-1)">
+              <use xlink:href="#icon-shangyishoushangyige"></use>
+            </svg>
+                <svg class="icon bofang" aria-hidden="true" v-if="isbtnShow" @click="play">
+              <use xlink:href="#icon-bofang1"></use>
+            </svg>
+                <svg class="icon bofang" aria-hidden="true" v-else @click="play">
+              <use xlink:href="#icon-zanting"></use>
+            </svg>
+                <svg class="icon" aria-hidden="true" @click="goPlay(1)">
+              <use xlink:href="#icon-xiayigexiayishou"></use>
+            </svg>
+                <svg class="icon" aria-hidden="true">
+              <use xlink:href="#icon-zu"></use>
+            </svg>
+            </div>
+        </div> -->
+    </section>
+    <section id="songs_list" style="display: none;">
+        <songlist-card></songlist-card>
+
+
+        <section class="songs_list">
+            <div class=" _title">
+                <p class="iconfont">&#xea6e;</p>
+                <div>播放全部</div>
+                <i>(共100首)</i>
+            </div>
+
+            <section class="sheetList">
+            </section>
+
+        </section>
+    </section>
+
+
+
+    <!-- 尾部固定样式 -->
+    >
+    <footer>
+        <div class="foot">
+            <div></div>
+            <div> 安装yun音乐 发现更多精彩</div>
+        </div>
+    </footer>
+
+</body>
+
+</html>
